@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #b0b6e3;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-block: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0 10px 20px rgba(57, 87, 220, 0.08);
+          box-shadow: 0 10px 20px rgba(57, 87, 220, 0.08);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3 ease;
+  transition: -webkit-transform 0.3 ease;
+  transition: transform 0.3 ease;
+  transition: transform 0.3 ease, -webkit-transform 0.3 ease;
+}
+
+.color:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.color:hover .rect-box {
+  -webkit-filter: brightness(106%);
+          filter: brightness(106%);
+}
+
+.rect-box {
+  background-color: #8A6CEF;
+  width: 200px;
+  height: 200px;
+  border-radius: 0.6rem;
+}
+
+.text {
+  margin-block: 1rem 0;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.refresh-btn {
+  all: unset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0.8rem 1.3rem;
+  background-color: #8A6CEF;
+  color: #fff;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 10px 20px rgba(57, 87, 220, 0.2);
+          box-shadow: 0 10px 20px rgba(57, 87, 220, 0.2);
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin-top: 10px;
+  }
+  .container .color {
+    margin: 8px;
+    padding: 5px;
+  }
+  .container .rect-box {
+    width: 140px;
+    height: 140px;
+  }
+  .container .text {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=main.css.map */
